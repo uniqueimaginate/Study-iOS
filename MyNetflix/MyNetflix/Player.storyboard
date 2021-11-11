@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="R4Z-EO-ewK">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" id="mbs-Ed-6wm" customClass="PlayerViewController" customModule="MyNetflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dq2-Lt-FjU">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axT-7o-HQk" customClass="PlayerView" customModule="MyNetflix" customModuleProvider="target">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28H-fk-IQX">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-xk-ZoS">
+                                        <rect key="frame" x="384" y="187" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="a6e-T7-oS7"/>
+                                            <constraint firstAttribute="height" constant="40" id="pHJ-qK-LAe"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <state key="selected" image="pause.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="togglePlaybutton:" destination="mbs-Ed-6wm" eventType="touchUpInside" id="9RK-vM-uTm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abi-Fp-adc">
+                                        <rect key="frame" x="748" y="16" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QP2-JE-GrG"/>
+                                            <constraint firstAttribute="width" constant="40" id="sv7-Si-bCy"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="xmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="mbs-Ed-6wm" eventType="touchUpInside" id="juZ-4T-pEg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jt7-xk-ZoS" firstAttribute="centerY" secondItem="28H-fk-IQX" secondAttribute="centerY" id="Njg-FK-nKU"/>
+                                    <constraint firstItem="Abi-Fp-adc" firstAttribute="top" secondItem="28H-fk-IQX" secondAttribute="top" constant="16" id="kCN-Bi-E6z"/>
+                                    <constraint firstItem="Jt7-xk-ZoS" firstAttribute="centerX" secondItem="28H-fk-IQX" secondAttribute="centerX" id="kNs-6O-WGL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Abi-Fp-adc" secondAttribute="trailing" constant="20" id="m39-5B-XBK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Du5-Th-wYi"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="28H-fk-IQX" firstAttribute="width" secondItem="axT-7o-HQk" secondAttribute="width" id="0OU-KM-xm0"/>
+                            <constraint firstItem="axT-7o-HQk" firstAttribute="bottom" secondItem="Dq2-Lt-FjU" secondAttribute="bottom" id="0PA-pT-P0t"/>
+                            <constraint firstItem="28H-fk-IQX" firstAttribute="height" secondItem="axT-7o-HQk" secondAttribute="height" id="4f4-pR-nJZ"/>
+                            <constraint firstItem="axT-7o-HQk" firstAttribute="trailing" secondItem="Du5-Th-wYi" secondAttribute="trailing" id="ETH-7E-iX7"/>
+                            <constraint firstItem="Du5-Th-wYi" firstAttribute="leading" secondItem="axT-7o-HQk" secondAttribute="leading" id="YDw-SF-j6F"/>
+                            <constraint firstItem="28H-fk-IQX" firstAttribute="leading" secondItem="axT-7o-HQk" secondAttribute="leading" id="fFd-xr-Daw"/>
+                            <constraint firstItem="axT-7o-HQk" firstAttribute="top" secondItem="Du5-Th-wYi" secondAttribute="top" id="gDD-FI-2ck"/>
+                            <constraint firstItem="28H-fk-IQX" firstAttribute="top" secondItem="axT-7o-HQk" secondAttribute="top" id="zRd-Wg-1xv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlView" destination="28H-fk-IQX" id="7XX-US-r8b"/>
+                        <outlet property="playButton" destination="Jt7-xk-ZoS" id="mwS-ci-dKi"/>
+                        <outlet property="playerView" destination="axT-7o-HQk" id="Njz-PG-s0U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Du-VI-KnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.0089285714285712" y="1.4492753623188408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
