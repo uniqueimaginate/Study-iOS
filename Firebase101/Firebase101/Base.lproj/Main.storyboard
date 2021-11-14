@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Firebase101" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Data!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsB-21-0QY">
+                                <rect key="frame" x="162" y="107" width="90" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Customers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAD-wV-gqs">
+                                <rect key="frame" x="139.5" y="181" width="135" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aL-x3-LyO">
+                                <rect key="frame" x="127" y="369" width="160" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="9vY-hx-9Pv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="READ">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchCustomer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPH-lx-V9g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMT-KC-qTS">
+                                <rect key="frame" x="127" y="458" width="160" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="E7r-aT-Ge6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="UPDATE">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateCustomer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ho-Nj-OKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-Gz-z20">
+                                <rect key="frame" x="127" y="543" width="160" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Sbl-OJ-Gsr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteCustomer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsO-E8-TEJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqD-zr-qLf">
+                                <rect key="frame" x="127" y="285" width="160" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="PS8-dX-NoO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="CREATE">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="createCustomer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jy-Bi-sgV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OqD-zr-qLf" firstAttribute="top" secondItem="WAD-wV-gqs" secondAttribute="bottom" constant="80" id="Fs4-7x-beC"/>
+                            <constraint firstItem="NTb-Gz-z20" firstAttribute="centerX" secondItem="iMT-KC-qTS" secondAttribute="centerX" id="Iwq-5C-UF4"/>
+                            <constraint firstItem="HsB-21-0QY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="Jio-bK-bfM"/>
+                            <constraint firstItem="iMT-KC-qTS" firstAttribute="centerX" secondItem="4aL-x3-LyO" secondAttribute="centerX" id="KFe-Xm-5RK"/>
+                            <constraint firstItem="OqD-zr-qLf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LkR-Oo-IFG"/>
+                            <constraint firstItem="iMT-KC-qTS" firstAttribute="top" secondItem="4aL-x3-LyO" secondAttribute="bottom" constant="48" id="Nf6-hH-YZe"/>
+                            <constraint firstItem="NTb-Gz-z20" firstAttribute="top" secondItem="iMT-KC-qTS" secondAttribute="bottom" constant="44" id="TMr-mU-N6f"/>
+                            <constraint firstItem="HsB-21-0QY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VTp-jk-4w5"/>
+                            <constraint firstItem="WAD-wV-gqs" firstAttribute="top" secondItem="HsB-21-0QY" secondAttribute="bottom" constant="50" id="ke4-ap-cBc"/>
+                            <constraint firstItem="4aL-x3-LyO" firstAttribute="top" secondItem="OqD-zr-qLf" secondAttribute="bottom" constant="43" id="nRY-Nf-h65"/>
+                            <constraint firstItem="4aL-x3-LyO" firstAttribute="centerX" secondItem="OqD-zr-qLf" secondAttribute="centerX" id="vCn-Ny-zBK"/>
+                            <constraint firstItem="WAD-wV-gqs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xJ3-am-uc8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="HsB-21-0QY" id="5cg-VR-gFY"/>
+                        <outlet property="numOfCustomers" destination="WAD-wV-gqs" id="5if-CU-aRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
