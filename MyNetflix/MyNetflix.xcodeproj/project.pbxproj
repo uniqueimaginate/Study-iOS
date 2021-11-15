@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		627DF332DBB9686538615E1E /* Pods_MyNetflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3142C5FD088981EC8122A7AE /* Pods_MyNetflix.framework */; };
 		9409834F243468AA00FD1040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9409834E243468AA00FD1040 /* AppDelegate.swift */; };
 		94098351243468AA00FD1040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94098350243468AA00FD1040 /* SceneDelegate.swift */; };
 		94098353243468AA00FD1040 /* AppTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94098352243468AA00FD1040 /* AppTabbarController.swift */; };
@@ -19,6 +20,9 @@
 		94DFD7532435CED7009687ED /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DFD7522435CED7009687ED /* RecommendListViewController.swift */; };
 		94DFD7552435DA88009687ED /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DFD7542435DA88009687ED /* SearchViewController.swift */; };
 		94DFD7812436F11B009687ED /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DFD7802436F11B009687ED /* PlayerView.swift */; };
+		D088772D2741D9AC00A0E44C /* UpComingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D088772C2741D9AC00A0E44C /* UpComingViewController.swift */; };
+		D088772F2741E6C400A0E44C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D088772E2741E6C400A0E44C /* GoogleService-Info.plist */; };
+		D08877312741ED3100A0E44C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08877302741ED3100A0E44C /* HistoryViewController.swift */; };
 		D0B42796273BBB1000000A4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0B42795273BBB1000000A4D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3142C5FD088981EC8122A7AE /* Pods_MyNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422454BD5243BF0E1C4B22A3 /* Pods-MyNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNetflix.debug.xcconfig"; path = "Target Support Files/Pods-MyNetflix/Pods-MyNetflix.debug.xcconfig"; sourceTree = "<group>"; };
+		449C41154C0682DE417BE6A6 /* Pods-MyNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNetflix.release.xcconfig"; path = "Target Support Files/Pods-MyNetflix/Pods-MyNetflix.release.xcconfig"; sourceTree = "<group>"; };
 		9409834B243468AA00FD1040 /* MyNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9409834E243468AA00FD1040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94098350243468AA00FD1040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +57,9 @@
 		94DFD7522435CED7009687ED /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
 		94DFD7542435DA88009687ED /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		94DFD7802436F11B009687ED /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		D088772C2741D9AC00A0E44C /* UpComingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingViewController.swift; sourceTree = "<group>"; };
+		D088772E2741E6C400A0E44C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D08877302741ED3100A0E44C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B42796273BBB1000000A4D /* Kingfisher in Frameworks */,
+				627DF332DBB9686538615E1E /* Pods_MyNetflix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +80,8 @@
 			children = (
 				9409834D243468AA00FD1040 /* MyNetflix */,
 				9409834C243468AA00FD1040 /* Products */,
+				BC37E436C5B789B7FF6959E2 /* Pods */,
+				BA21B0B661EBA1D87EB3421D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,15 +102,35 @@
 				940983622434692900FD1040 /* HomeViewController.swift */,
 				94DFD7542435DA88009687ED /* SearchViewController.swift */,
 				94DFD7522435CED7009687ED /* RecommendListViewController.swift */,
+				D088772C2741D9AC00A0E44C /* UpComingViewController.swift */,
 				94098354243468AA00FD1040 /* Main.storyboard */,
+				D08877302741ED3100A0E44C /* HistoryViewController.swift */,
 				94098366243469D700FD1040 /* Player.storyboard */,
 				940983642434693600FD1040 /* PlayerViewController.swift */,
 				94DFD7802436F11B009687ED /* PlayerView.swift */,
 				94098357243468AE00FD1040 /* Assets.xcassets */,
 				94098359243468AE00FD1040 /* LaunchScreen.storyboard */,
 				9409835C243468AE00FD1040 /* Info.plist */,
+				D088772E2741E6C400A0E44C /* GoogleService-Info.plist */,
 			);
 			path = MyNetflix;
+			sourceTree = "<group>";
+		};
+		BA21B0B661EBA1D87EB3421D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3142C5FD088981EC8122A7AE /* Pods_MyNetflix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC37E436C5B789B7FF6959E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				422454BD5243BF0E1C4B22A3 /* Pods-MyNetflix.debug.xcconfig */,
+				449C41154C0682DE417BE6A6 /* Pods-MyNetflix.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,10 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9409835F243468AE00FD1040 /* Build configuration list for PBXNativeTarget "MyNetflix" */;
 			buildPhases = (
+				94481644AC1335D0FD164E46 /* [CP] Check Pods Manifest.lock */,
 				94098347243468AA00FD1040 /* Sources */,
 				94098348243468AA00FD1040 /* Frameworks */,
 				94098349243468AA00FD1040 /* Resources */,
 				94DFD77F2436E2DE009687ED /* Embed Frameworks */,
+				C959C7F97F7E113765AB0BF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,12 +202,55 @@
 			files = (
 				9409835B243468AE00FD1040 /* LaunchScreen.storyboard in Resources */,
 				94098367243469D700FD1040 /* Player.storyboard in Resources */,
+				D088772F2741E6C400A0E44C /* GoogleService-Info.plist in Resources */,
 				94098358243468AE00FD1040 /* Assets.xcassets in Resources */,
 				94098356243468AA00FD1040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94481644AC1335D0FD164E46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyNetflix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C959C7F97F7E113765AB0BF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNetflix/Pods-MyNetflix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyNetflix/Pods-MyNetflix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyNetflix/Pods-MyNetflix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94098347243468AA00FD1040 /* Sources */ = {
@@ -182,7 +260,9 @@
 				94098353243468AA00FD1040 /* AppTabbarController.swift in Sources */,
 				94DFD7552435DA88009687ED /* SearchViewController.swift in Sources */,
 				94DFD7812436F11B009687ED /* PlayerView.swift in Sources */,
+				D08877312741ED3100A0E44C /* HistoryViewController.swift in Sources */,
 				9409834F243468AA00FD1040 /* AppDelegate.swift in Sources */,
+				D088772D2741D9AC00A0E44C /* UpComingViewController.swift in Sources */,
 				94098351243468AA00FD1040 /* SceneDelegate.swift in Sources */,
 				94DFD7532435CED7009687ED /* RecommendListViewController.swift in Sources */,
 				940983632434692900FD1040 /* HomeViewController.swift in Sources */,
@@ -328,6 +408,7 @@
 		};
 		94098360243468AE00FD1040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422454BD5243BF0E1C4B22A3 /* Pods-MyNetflix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +427,7 @@
 		};
 		94098361243468AE00FD1040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449C41154C0682DE417BE6A6 /* Pods-MyNetflix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
